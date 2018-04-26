@@ -18,7 +18,7 @@ namespace Residencias.BackEnd
             String usuario = "root";
             String contrasenia = "root";
             String puerto = "3306";
-            String basede = "ing";
+            String basede = "BDIS";
             String parametrosConexion = "Server=" + servidor + ";Uid=" + usuario + ";Pwd=" + contrasenia + ";Database=" + basede + ";Port=" + puerto + ";";
             conexion = new MySqlConnection(parametrosConexion);
             try

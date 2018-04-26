@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Residencias.Vistas;
+using Residencias.BackEnd;
 
 namespace Residencias.Vistas
 {
@@ -17,9 +18,17 @@ namespace Residencias.Vistas
         public FrmLogin()
         {
             InitializeComponent();
+            ChbxConexion.AutoCheck = false;
+            if(new Conexion().Conectar())
+            {
+                ChbxConexion.Checked = true;
+            }else
+            {
+                ChbxConexion.Checked = false;
+            }
+
             
-        }
-        bool user = true, password = true, tipo = true;
+        }        
         public void limpiar()
         {
             TxtContrasenia.Text = "";

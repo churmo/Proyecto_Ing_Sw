@@ -12,3 +12,17 @@ C:\Users\Phoenix\Documents\GitHub\Proyecto_Ing_Sw\Residencias\obj\Debug\Residenc
 C:\Users\Phoenix\Documents\GitHub\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.csproj.GenerateResource.Cache
 C:\Users\Phoenix\Documents\GitHub\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.exe
 C:\Users\Phoenix\Documents\GitHub\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.pdb
+E:\Documentos\GitHub\Proyecto_Ing_Sw\Residencias\bin\Debug\Residencias.exe.config
+E:\Documentos\GitHub\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.exe
+E:\Documentos\GitHub\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.pdb
+E:\Documentos\GitHub\Proyecto_Ing_Sw\Residencias\bin\Debug\Residencias.exe
+E:\Documentos\GitHub\Proyecto_Ing_Sw\Residencias\bin\Debug\Residencias.pdb
+E:\Documentos\GitHub\Proyecto_Ing_Sw\Residencias\bin\Debug\MySql.Data.dll
+E:\Documentos\GitHub\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.csprojResolveAssemblyReference.cache
+E:\Documentos\GitHub\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.Properties.Resources.resources
+E:\Documentos\GitHub\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.FrmAsigAsesor.resources
+E:\Documentos\GitHub\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.Vistas.FrmCordinador.resources
+E:\Documentos\GitHub\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.Vistas.FrmCrear.resources
+E:\Documentos\GitHub\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.Vistas.FrmLogin.resources
+E:\Documentos\GitHub\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.FrmSRP.resources
+E:\Documentos\GitHub\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.csproj.GenerateResource.Cache

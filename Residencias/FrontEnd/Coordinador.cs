@@ -13,7 +13,8 @@ namespace Residencias.FrontEnd
         String ApellidoP { get; set; }
         String ApellidoM { get; set; }
         String Carrera { get; set; }
-        String FechaIngreso { get; set; }
+        String Correo { get; set; }
+        String Telefono { get; set; }
         public String NombreCompleto
         {
             get
@@ -24,15 +25,16 @@ namespace Residencias.FrontEnd
         Coordinador()
         { }
 
-        Coordinador(int idClaveCoordi, String Nombre, String ApellidoP, String ApellidoM, String Carrera,
-            String FechaIngreso)
+        Coordinador(int idClaveCoordi, String Nombre, String ApellidoP, String ApellidoM, String Carrera, String Correo,
+            String Telefono)
         {
             this.idClaveCoordi = idClaveCoordi;
             this.Nombre = Nombre;
             this.ApellidoP = ApellidoP;
             this.ApellidoM = ApellidoM;
             this.Carrera = Carrera;
-            this.FechaIngreso = FechaIngreso;
+            this.Telefono = Telefono;
+            this.Correo = Correo;
         }
     }
 }

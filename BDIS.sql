@@ -1,38 +1,14 @@
+drop database BDIS;
 create database BDIS;
 use bdis;
-
--- TABLA RESIDENTE
-create table Residente
+-- TABLA Alumno 
+CREATE TABLE Alumno
 (
-noControl 	varchar(9) primary key 		not null,
-Nombre 		varchar(45) 				not null,
-apellidoP 	varchar(45) 				not null,
-apellidoM 	varchar(45) 				not null,
-Carrera 	varchar(45) 				not null,
-correo 		varchar(100)				not null,
-NoSS 		varchar (50) 				not null,
-Ciudad 		varchar (100) 				not null,
-Telefono 	varchar (10) 				not null,
-idCoordi 	int							not null,
-idTutor		int 						not null,
-idEmpresa	int							not null,
-constraint	foreign key(idCoordi) references coordi(idCoordi),
-constraint	foreign key(idTutor) references Tutor(idTutor),
-constraint	foreign key(idEmpresa) references Empresa(idEmpresa)
+idAlumno					int	primary key 			not null,
+nombre					varchar(45)					not null,
+apellido1				varchar(45) 				not null,
+apellido2				varchar(45) 				null
 );
-
--- TABLA PROYECTO
-create table Proyecto
-(
-idProyecto 				int 														not null primary key,
-Nombre 					varchar(45) 												not null,
-PeriodoProyecto 		varchar (100) 												not null,
-NumeroResidencias 		int 														not null,
-opcionElegida 			enum ('Banco de Proyectos','Propuesta propia','Trabajador') not null,
-idEmpresa 				int 														not null,
-constraint	foreign key(idEmpresa) references Empresa(idEmpresa)
-);
-
 -- TABLA EMPRESA
 create table Empresa
 (
@@ -53,7 +29,6 @@ PuestoAsesorExterno 		varchar (50) 		not null,
 NombrePersonaFirma 			varchar (150) 		not null,
 PuestoPersonaFirma 			varchar (150) 		not null
 );
-
 -- TABLA COORDINADOR
 create table coordi
 (
@@ -65,7 +40,6 @@ Carrera 	varchar(45) 	not null,
 correo 		varchar(100)	null,
 Telefono 	varchar (10) 	null
 );
-
 -- TABLA TUTOR 
 CREATE TABLE Tutor
 (
@@ -74,7 +48,6 @@ nombre					varchar(45)					not null,
 apellido1				varchar(45) 				not null,
 apellido2				varchar(45) 				null
 );
-
 -- TABLA REVISOR 
 CREATE TABLE Revisor
 (
@@ -83,14 +56,42 @@ nombre					varchar(45)					not null,
 apellido1				varchar(45) 				not null,
 apellido2				varchar(45) 				null
 );
-
 -- TABLA USUARIOS
 create table usuarios
 (
 nombreUsuario varchar (50) not null,
 contrasenia varchar (20) not null
 );
-
+-- TABLA RESIDENTE
+create table Residente
+(
+noControl 	varchar(9) primary key 		not null,
+Nombre 		varchar(45) 				not null,
+apellidoP 	varchar(45) 				not null,
+apellidoM 	varchar(45) 				not null,
+Carrera 	varchar(45) 				not null,
+correo 		varchar(100)				not null,
+NoSS 		varchar (50) 				not null,
+Ciudad 		varchar (100) 				not null,
+Telefono 	varchar (10) 				not null,
+idCoordi 	int							not null,
+idTutor		int 						not null,
+idEmpresa	int							not null,
+constraint	foreign key(idCoordi) references coordi(idCoordi),
+constraint	foreign key(idTutor) references Tutor(idTutor),
+constraint	foreign key(idEmpresa) references Empresa(idEmpresa)
+);
+-- TABLA PROYECTO
+create table Proyecto
+(
+idProyecto 				int 														not null primary key,
+Nombre 					varchar(45) 												not null,
+PeriodoProyecto 		varchar (100) 												not null,
+NumeroResidencias 		int 														not null,
+opcionElegida 			enum ('Banco de Proyectos','Propuesta propia','Trabajador') not null,
+idEmpresa 				int 														not null,
+constraint	foreign key(idEmpresa) references Empresa(idEmpresa)
+);
 -- TABLA REVISAR DOCUMENTOS
 create table RevisarDoc
 (
@@ -98,7 +99,7 @@ idDocumento 		int primary key 	not null,
 Calificacion 		int 				not null,
 Notas 				longtext 			null,
 idRevisor 			int 				not null,
-noControl 			varchar (9) 		not null,
+idResidente 			varchar (9) 		not null,
 constraint	foreign key(idRevisor) references Revisor(idRevisor),
-constraint	foreign key(noControl) references Residente(noControl)
+constraint	foreign key(idResidente) references Residente(noControl)
 );

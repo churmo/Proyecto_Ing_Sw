@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Residencias.FrontEnd
 {
-    public class Tutor
+    public class Revisor
     {
         int idClaveTutor { get; set; }
         String Nombre { get; set; }
         String ApellidoP { get; set; }
         String ApellidoM { get; set; }
-      
+
         public String NombreCompleto
         {
             get
@@ -20,16 +20,16 @@ namespace Residencias.FrontEnd
                 return String.Format("{0} {1} {2}", Nombre, ApellidoP, ApellidoM);
             }
         }
-        Tutor()
+        Revisor()
         { }
 
-        Tutor(int idClaveTutor, String Nombre, String ApellidoP, String ApellidoM)
+        Revisor(int idClaveTutor, String Nombre, String ApellidoP, String ApellidoM)
         {
             this.idClaveTutor = idClaveTutor;
             this.Nombre = Nombre;
             this.ApellidoP = ApellidoP;
             this.ApellidoM = ApellidoM;
-            
+
         }
     }
 }
