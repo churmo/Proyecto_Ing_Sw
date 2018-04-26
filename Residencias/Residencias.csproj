@@ -69,6 +69,12 @@
     <Compile Include="Vistas\FrmCordinador.Designer.cs">
       <DependentUpon>FrmCordinador.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\FrmCrear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmCrear.Designer.cs">
+      <DependentUpon>FrmCrear.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\FrmCordinador.resx">
       <DependentUpon>FrmCordinador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmCrear.resx">
+      <DependentUpon>FrmCrear.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

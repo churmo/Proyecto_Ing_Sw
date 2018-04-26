@@ -7,40 +7,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Residencias.Vistas;
 
 namespace Residencias.Vistas
 {
-    public partial class FrmCordinador : Form
+    public partial class FrmCrear : Form
     {
         Form x;
-        public FrmCordinador(Form c)
+        public FrmCrear(Form c)
         {
             InitializeComponent();
             x = c;
         }
 
-        private void BtnAT_Click(object sender, EventArgs e)
-        {
-            this.Visible = false;
-            new FrmAsigAsesor(this).Show();
-        }
-
-        private void BtnAR_Click(object sender, EventArgs e)
+        private void BtnCrear_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void BtnSalir_Click(object sender, EventArgs e)
+        private void BtnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
             x.Visible = true;
         }
 
-        private void FrmCordinador_FormClosing(object sender, FormClosingEventArgs e)
+        private void FrmCrear_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (MessageBox.Show("Seguro que desea salir?", "Aviso!", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
-                    == DialogResult.Yes)
+                   == DialogResult.Yes)
             {
                 this.Dispose();
                 x.Visible = true;

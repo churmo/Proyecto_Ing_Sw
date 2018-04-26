@@ -35,6 +35,7 @@
             this.BtnSalir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.BtnCrear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TxtUsuario
@@ -102,11 +103,22 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Contraseña";
             // 
+            // BtnCrear
+            // 
+            this.BtnCrear.Location = new System.Drawing.Point(95, 139);
+            this.BtnCrear.Name = "BtnCrear";
+            this.BtnCrear.Size = new System.Drawing.Size(75, 23);
+            this.BtnCrear.TabIndex = 7;
+            this.BtnCrear.Text = "Crear";
+            this.BtnCrear.UseVisualStyleBackColor = true;
+            this.BtnCrear.Click += new System.EventHandler(this.BtnCrear_Click);
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 172);
+            this.Controls.Add(this.BtnCrear);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnSalir);
@@ -132,5 +144,6 @@
         private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button BtnCrear;
     }
 }

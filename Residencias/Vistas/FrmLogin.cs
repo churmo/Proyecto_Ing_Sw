@@ -76,6 +76,12 @@ namespace Residencias.Vistas
             
         }
 
+        private void BtnCrear_Click(object sender, EventArgs e)
+        {
+            new FrmCrear(this).Show();
+            this.Visible = false;
+        }
+
         private void BtnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
