@@ -32,7 +32,6 @@ G:\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.pdb
 G:\Proyecto_Ing_Sw\Residencias\bin\Debug\Residencias.exe
 G:\Proyecto_Ing_Sw\Residencias\bin\Debug\Residencias.pdb
 G:\Proyecto_Ing_Sw\Residencias\bin\Debug\MySql.Data.dll
-G:\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.csprojResolveAssemblyReference.cache
 G:\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.Properties.Resources.resources
 G:\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.FrmAsigAsesor.resources
 G:\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.Vistas.FrmCordinador.resources

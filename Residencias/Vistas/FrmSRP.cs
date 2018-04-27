@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Residencias.Vistas;
+using Residencias.FrontEnd;
+using Residencias.BackEnd;
 
 namespace Residencias
 {
@@ -15,10 +17,27 @@ namespace Residencias
         
     {
         Form x;
-        public FrmSRP(Form c)
+        String idA = "", ConA="";
+        public FrmSRP(Form c,String id,String Con)
         {
             InitializeComponent();
             x = c;
+            idA = id;
+            ConA = Con;
+            Carga();
+        }
+        public FrmSRP()
+        {
+            InitializeComponent();
+        }
+        private void Carga()
+        {
+            AlumnoDAO DaoAlu = new AlumnoDAO();
+            Alumno Alu = new Alumno();
+            Alu=DaoAlu.obtenerAlumno(idA);
+            txtNoControlR.Text = Alu.idAlumno;
+            txtNombreResidente.Text = Alu.NombreCompleto;
+            txtCarreraR.Text = Alu.Carrera;
         }
 
         private void tabDatosEmpresa_Click(object sender, EventArgs e)
@@ -80,6 +99,8 @@ namespace Residencias
         {
             this.Close();
         }
+
+        
 
         private void FrmSRP_FormClosing(object sender, FormClosingEventArgs e)
         {

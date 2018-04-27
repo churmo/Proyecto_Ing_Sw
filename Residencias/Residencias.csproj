@@ -47,14 +47,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BackEnd\Conexion.cs" />
-    <Compile Include="BackEnd\DaoAlumnos.cs" />
+    <Compile Include="BackEnd\AlumnoDAO.cs" />
     <Compile Include="BackEnd\DaoCoordinador.cs" />
     <Compile Include="BackEnd\DaoEmpresa.cs" />
     <Compile Include="BackEnd\DaoProyecto.cs" />
     <Compile Include="BackEnd\DaoResidente.cs" />
     <Compile Include="BackEnd\DaoRevisor.cs" />
     <Compile Include="BackEnd\DaoTutor.cs" />
-    <Compile Include="FrontEnd\Alumnos.cs" />
+    <Compile Include="FrontEnd\Alumno.cs" />
     <Compile Include="FrontEnd\Coordinador.cs" />
     <Compile Include="FrontEnd\Empresa.cs" />
     <Compile Include="FrontEnd\Proyecto.cs" />

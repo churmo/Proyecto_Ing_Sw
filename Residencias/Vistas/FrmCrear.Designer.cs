@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Txtid = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TxtContrasenia = new System.Windows.Forms.TextBox();
             this.BtnCrear = new System.Windows.Forms.Button();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // Txtid
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(259, 20);
-            this.textBox1.TabIndex = 0;
+            this.Txtid.Location = new System.Drawing.Point(13, 33);
+            this.Txtid.Name = "Txtid";
+            this.Txtid.Size = new System.Drawing.Size(259, 20);
+            this.Txtid.TabIndex = 0;
             // 
             // label1
             // 
@@ -61,13 +61,13 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Contraseña";
             // 
-            // textBox2
+            // TxtContrasenia
             // 
-            this.textBox2.Location = new System.Drawing.Point(13, 86);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(143, 20);
-            this.textBox2.TabIndex = 3;
+            this.TxtContrasenia.Location = new System.Drawing.Point(13, 86);
+            this.TxtContrasenia.Name = "TxtContrasenia";
+            this.TxtContrasenia.PasswordChar = '*';
+            this.TxtContrasenia.Size = new System.Drawing.Size(143, 20);
+            this.TxtContrasenia.TabIndex = 3;
             // 
             // BtnCrear
             // 
@@ -96,10 +96,10 @@
             this.ClientSize = new System.Drawing.Size(282, 157);
             this.Controls.Add(this.BtnCancelar);
             this.Controls.Add(this.BtnCrear);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.TxtContrasenia);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Txtid);
             this.Name = "FrmCrear";
             this.Text = "Alumno";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmCrear_FormClosing);
@@ -110,10 +110,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Txtid;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TxtContrasenia;
         private System.Windows.Forms.Button BtnCrear;
         private System.Windows.Forms.Button BtnCancelar;
     }

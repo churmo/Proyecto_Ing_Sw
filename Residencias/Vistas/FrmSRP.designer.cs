@@ -71,6 +71,7 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.tabResidente = new System.Windows.Forms.TabPage();
+            this.label18 = new System.Windows.Forms.Label();
             this.cbxSeguridadSocial = new System.Windows.Forms.ComboBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnEntregar = new System.Windows.Forms.Button();
@@ -500,6 +501,7 @@
             // 
             // tabResidente
             // 
+            this.tabResidente.Controls.Add(this.label18);
             this.tabResidente.Controls.Add(this.cbxSeguridadSocial);
             this.tabResidente.Controls.Add(this.btnCancelar);
             this.tabResidente.Controls.Add(this.btnEntregar);
@@ -527,6 +529,15 @@
             this.tabResidente.TabIndex = 2;
             this.tabResidente.Text = "Datos del Residente";
             this.tabResidente.UseVisualStyleBackColor = true;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(133, 18);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(185, 13);
+            this.label18.TabIndex = 23;
+            this.label18.Text = "Revise que sus datos esten correctos";
             // 
             // cbxSeguridadSocial
             // 
@@ -783,6 +794,7 @@
         private System.Windows.Forms.ComboBox cbxOpcionesDP;
         private System.Windows.Forms.ComboBox cbxGiroRamaSector;
         private System.Windows.Forms.ComboBox cbxSeguridadSocial;
+        private System.Windows.Forms.Label label18;
     }
 }
 

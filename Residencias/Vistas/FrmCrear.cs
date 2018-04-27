@@ -22,7 +22,7 @@ namespace Residencias.Vistas
         private void BtnCrear_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            new FrmSRP(x).Show();
+            new FrmSRP(x,Txtid.Text,TxtContrasenia.Text).Show();
         }
 
         private void BtnCancelar_Click(object sender, EventArgs e)

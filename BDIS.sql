@@ -4,10 +4,11 @@ use bdis;
 -- TABLA Alumno 
 CREATE TABLE Alumno
 (
-idAlumno					int	primary key 			not null,
+idAlumno			    varchar(9) primary key 		not null,
 nombre					varchar(45)					not null,
 apellido1				varchar(45) 				not null,
-apellido2				varchar(45) 				null
+apellido2				varchar(45) 				null,
+Carrera 	varchar(45) 	not null
 );
 -- TABLA EMPRESA
 create table Empresa
@@ -66,10 +67,12 @@ contrasenia varchar (20) not null
 create table Residente
 (
 noControl 	varchar(9) primary key 		not null,
+Contrasenia	varchar(45) 				not null,
 Nombre 		varchar(45) 				not null,
 apellidoP 	varchar(45) 				not null,
 apellidoM 	varchar(45) 				not null,
 Carrera 	varchar(45) 				not null,
+Aceptado    enum('Aceptado','Rechazado')null,
 correo 		varchar(100)				not null,
 NoSS 		varchar (50) 				not null,
 Ciudad 		varchar (100) 				not null,
@@ -103,3 +106,5 @@ idResidente 			varchar (9) 		not null,
 constraint	foreign key(idRevisor) references Revisor(idRevisor),
 constraint	foreign key(idResidente) references Residente(noControl)
 );
+insert into  Alumno values('S15120033','Ricardo Fabian','Juarez','Santoyo','Ingeneria en sistemas computacionales');
+		SELECT * FROM Alumno where idAlumno='s15120033';
