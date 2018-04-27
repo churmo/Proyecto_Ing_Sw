@@ -69,11 +69,11 @@ namespace Residencias.Vistas
         {
             if (Comprobar())
             {
-                if (CbxTipo.Text.Equals("Alumno"))
+                if (CbxTipo.Text.Equals("Residente"))
                 {
                     limpiar();
                     this.Visible = false;
-                    new FrmSRP(this).Show();
+                    new FrmResidente(this).Show();
                 }
                 else if (CbxTipo.Text.Equals("Coordinador"))
                 {
@@ -87,6 +87,7 @@ namespace Residencias.Vistas
 
         private void BtnCrear_Click(object sender, EventArgs e)
         {
+            limpiar();
             new FrmCrear(this).Show();
             this.Visible = false;
         }

@@ -59,7 +59,7 @@
             this.CbxTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CbxTipo.FormattingEnabled = true;
             this.CbxTipo.Items.AddRange(new object[] {
-            "Alumno",
+            "Residente",
             "Coordinador"});
             this.CbxTipo.Location = new System.Drawing.Point(13, 113);
             this.CbxTipo.Name = "CbxTipo";

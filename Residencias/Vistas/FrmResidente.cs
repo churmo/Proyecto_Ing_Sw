@@ -10,28 +10,16 @@ using System.Windows.Forms;
 
 namespace Residencias.Vistas
 {
-    public partial class FrmCrear : Form
+    public partial class FrmResidente : Form
     {
         Form x;
-        public FrmCrear(Form c)
+        public FrmResidente(Form c)
         {
             InitializeComponent();
             x = c;
         }
 
-        private void BtnCrear_Click(object sender, EventArgs e)
-        {
-            this.Visible = false;
-            new FrmSRP(x).Show();
-        }
-
-        private void BtnCancelar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            x.Visible = true;
-        }
-
-        private void FrmCrear_FormClosing(object sender, FormClosingEventArgs e)
+        private void FrmResidente_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (MessageBox.Show("Seguro que desea salir?", "Aviso!", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
                    == DialogResult.Yes)

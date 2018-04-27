@@ -14,7 +14,7 @@ namespace Residencias.BackEnd
         public static MySqlConnection conexion = null;
         public bool Conectar()
         {
-            String servidor = "localhost";
+            String servidor = "192.168.18.52";
             String usuario = "root";
             String contrasenia = "root";
             String puerto = "3306";

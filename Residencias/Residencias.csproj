@@ -88,6 +88,12 @@
     <Compile Include="Vistas\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\FrmResidente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmResidente.Designer.cs">
+      <DependentUpon>FrmResidente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\FrmSRP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmResidente.resx">
+      <DependentUpon>FrmResidente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\FrmSRP.resx">
       <DependentUpon>FrmSRP.cs</DependentUpon>
