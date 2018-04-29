@@ -8,33 +8,41 @@ namespace Residencias.FrontEnd
 {
     public class Coordinador
     {
-        int idClaveCoordi { get; set; }
-        String Nombre { get; set; }
-        String ApellidoP { get; set; }
-        String ApellidoM { get; set; }
-        String Carrera { get; set; }
-        String Correo { get; set; }
-        String Telefono { get; set; }
+        public String idCoordi { get; set; }
+        public String Nombre { get; set; }
+        public String apellidoP { get; set; }
+        public String apellidoM { get; set; }
+        public String Carrera { get; set; }
+        public String correo { get; set; }
+        public String Telefono { get; set; }
+        public String contrasenia { get; set; }
         public String NombreCompleto
         {
             get
             {
-                return String.Format("{0} {1} {2}", Nombre, ApellidoP, ApellidoM);
+                return String.Format("{0} {1} {2}", Nombre, apellidoP, apellidoM);
             }
         }
-        Coordinador()
-        { }
-
-        Coordinador(int idClaveCoordi, String Nombre, String ApellidoP, String ApellidoM, String Carrera, String Correo,
-            String Telefono)
+        public Coordinador(String idCoordi,String Nombre,String apellidoP,String apellidoM,String Carrera,String correo,String Telefono,String contrasenia)
         {
-            this.idClaveCoordi = idClaveCoordi;
+            this.idCoordi = idCoordi;
             this.Nombre = Nombre;
-            this.ApellidoP = ApellidoP;
-            this.ApellidoM = ApellidoM;
+            this.apellidoP = apellidoP;
+            this.apellidoM = apellidoM;
             this.Carrera = Carrera;
+            this.correo = correo;
             this.Telefono = Telefono;
-            this.Correo = Correo;
+            this.contrasenia = contrasenia;
+        }
+        public Coordinador(String idCoordi, String contrasenia)
+        {
+            this.idCoordi = idCoordi;
+            this.contrasenia = contrasenia;
+        }
+
+        public Coordinador()
+        {
+
         }
     }
 }

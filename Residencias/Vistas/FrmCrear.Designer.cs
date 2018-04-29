@@ -101,6 +101,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Txtid);
             this.Name = "FrmCrear";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alumno";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmCrear_FormClosing);
             this.ResumeLayout(false);

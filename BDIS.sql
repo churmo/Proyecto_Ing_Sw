@@ -15,8 +15,8 @@ Carrera 				varchar(45) 				not null
 -- TABLA EMPRESA
 create table Empresa
 (
-idEmpresa 					int not null primary key,
-giraRamaSector 				enum ('Industrial','Servicios','Publico','Privado') not null,
+idEmpresa 					varchar (100) not null primary key,
+giraRamaSector 				enum ('Industrial','Servicios','Publico','Privado','Otro') not null,
 otrogrs 					varchar (45) 		not null,
 rfc 						varchar (1) 		not null,
 cp 							varchar (5) 		not null,
@@ -152,3 +152,4 @@ insert into Revisor values ('R18100001', 'Efren','Vega','Chavez','petit17'),
 ('R18100003','Jorge','Guzman','Ramos','yashin1'),
 ('R18100004','German','Guzman','Guzman','magneto97'),
 ('R18100005', 'David','Morales','Orozco','lastjedi9') ;
+

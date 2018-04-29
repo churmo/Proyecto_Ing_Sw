@@ -92,6 +92,8 @@
             this.label22 = new System.Windows.Forms.Label();
             this.txtNombreResidente = new System.Windows.Forms.TextBox();
             this.Nombre = new System.Windows.Forms.Label();
+            this.TxtOtro = new System.Windows.Forms.TextBox();
+            this.LblOtro = new System.Windows.Forms.Label();
             this.Menu.SuspendLayout();
             this.tabProyecto.SuspendLayout();
             this.tabDatosEmpresa.SuspendLayout();
@@ -199,6 +201,8 @@
             // 
             // tabDatosEmpresa
             // 
+            this.tabDatosEmpresa.Controls.Add(this.LblOtro);
+            this.tabDatosEmpresa.Controls.Add(this.TxtOtro);
             this.tabDatosEmpresa.Controls.Add(this.cbxGiroRamaSector);
             this.tabDatosEmpresa.Controls.Add(this.label17);
             this.tabDatosEmpresa.Controls.Add(this.txtPersonaFirma);
@@ -248,10 +252,11 @@
             "Servicios",
             "Privado",
             "Otro"});
-            this.cbxGiroRamaSector.Location = new System.Drawing.Point(296, 83);
+            this.cbxGiroRamaSector.Location = new System.Drawing.Point(139, 88);
             this.cbxGiroRamaSector.Name = "cbxGiroRamaSector";
             this.cbxGiroRamaSector.Size = new System.Drawing.Size(121, 21);
             this.cbxGiroRamaSector.TabIndex = 72;
+            this.cbxGiroRamaSector.SelectedIndexChanged += new System.EventHandler(this.cbxGiroRamaSector_SelectedIndexChanged);
             // 
             // label17
             // 
@@ -468,7 +473,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(316, 52);
+            this.label19.Location = new System.Drawing.Point(136, 60);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(90, 13);
             this.label19.TabIndex = 39;
@@ -708,6 +713,22 @@
             this.Nombre.TabIndex = 0;
             this.Nombre.Text = "Nombre";
             // 
+            // TxtOtro
+            // 
+            this.TxtOtro.Location = new System.Drawing.Point(288, 88);
+            this.TxtOtro.Name = "TxtOtro";
+            this.TxtOtro.Size = new System.Drawing.Size(344, 20);
+            this.TxtOtro.TabIndex = 73;
+            // 
+            // LblOtro
+            // 
+            this.LblOtro.AutoSize = true;
+            this.LblOtro.Location = new System.Drawing.Point(288, 60);
+            this.LblOtro.Name = "LblOtro";
+            this.LblOtro.Size = new System.Drawing.Size(164, 13);
+            this.LblOtro.TabIndex = 74;
+            this.LblOtro.Text = "Especifique que tipo de sector es";
+            // 
             // FrmSRP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -795,6 +816,8 @@
         private System.Windows.Forms.ComboBox cbxGiroRamaSector;
         private System.Windows.Forms.ComboBox cbxSeguridadSocial;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label LblOtro;
+        private System.Windows.Forms.TextBox TxtOtro;
     }
 }
 

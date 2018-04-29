@@ -81,6 +81,26 @@ namespace Residencias.BackEnd
             return objAlumno;
 
         }
+
+        public Alumno Obtener(String idAlumno)
+        {
+            Alumno objAlumno = new Alumno();
+            try
+            {
+                DataTable objTable = new DataTable();
+                objTable = con.ejecutarConsulta("SELECT * FROM Alumno where idAlumno='" + idAlumno + "';");
+                foreach (DataRow t in objTable.Rows)
+                {
+                    objAlumno = new Alumno(
+                        t["idAlumno"].ToString());
+                }
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+            return objAlumno;
+        }
     }
 }
 

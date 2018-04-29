@@ -8,27 +8,25 @@ namespace Residencias.FrontEnd
 {
     public class Empresa
     {
-        int idEmpresa { get; set; }
-        String giraRamaSector { get; set; }
-        String otrogrs { get; set; }
-        String rfc { get; set; }
-        String cp  { get; set; }
-        String  domicilio { get; set; }
-        String  fax { get; set; }
-        String colonia  { get; set; }
-    String telefono { get; set; }
-    String MisionEmpresa { get; set; }
-    String NombreTitularEmpresa { get; set; }
-    String PuestoTitularEmpresa { get; set; }
-    String NombreAsesorExterno { get; set; }
-    String PuestoAsesorExterno { get; set; }
-    String NombrePersonaFirma { get; set; }
-    String PuestoPersonaFirma { get; set; }
+        public String idEmpresa { get; set; }
+        public String giraRamaSector { get; set; }
+        public String otrogrs { get; set; }
+        public String rfc { get; set; }
+        public String cp { get; set; }
+        public String domicilio { get; set; }
+        public String fax { get; set; }
+        public String colonia { get; set; }
+        public String telefono { get; set; }
+        public String MisionEmpresa { get; set; }
+        public String NombreTitularEmpresa { get; set; }
+        public String PuestoTitularEmpresa { get; set; }
+        public String NombreAsesorExterno { get; set; }
+        public String PuestoAsesorExterno { get; set; }
+        public String NombrePersonaFirma { get; set; }
+        public String PuestoPersonaFirma { get; set; }
 
-        Empresa() { }
-        Empresa(int idEmpresa,String giraRamaSector,String otrogrs,String rfc, String cp,String domicilio,String fax,String colonia,String telefono,String MisionEmpresa,
-            String NombreTitularEmpresa,String PuestoTitularEmpresa,String NombreAsesorEcterno,String PuestoAsesorEcterno,String NombrePersonafirma,
-            String PuestoPersonaFirma) {
+        public Empresa(String idEmpresa, String giraRamaSector,String otrogrs,String rfc,String cp,String domicilio,String fax,String colonia,String telefono, String MisionEmpresa,String NombreTitularEmpresa,String PuestoTitularEmpresa,String NombreAsesorExterno,String PuestoAsesorExterno,String NombrePersonaFirma,String PuestoPersonaFirma)
+        {
             this.idEmpresa = idEmpresa;
             this.giraRamaSector = giraRamaSector;
             this.otrogrs = otrogrs;

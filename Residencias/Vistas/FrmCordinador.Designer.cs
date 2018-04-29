@@ -31,11 +31,12 @@
             this.BtnAT = new System.Windows.Forms.Button();
             this.BtnAR = new System.Windows.Forms.Button();
             this.BtnSalir = new System.Windows.Forms.Button();
+            this.BtnResidente = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnAT
             // 
-            this.BtnAT.Location = new System.Drawing.Point(24, 40);
+            this.BtnAT.Location = new System.Drawing.Point(23, 66);
             this.BtnAT.Name = "BtnAT";
             this.BtnAT.Size = new System.Drawing.Size(233, 23);
             this.BtnAT.TabIndex = 0;
@@ -45,7 +46,7 @@
             // 
             // BtnAR
             // 
-            this.BtnAR.Location = new System.Drawing.Point(24, 69);
+            this.BtnAR.Location = new System.Drawing.Point(23, 95);
             this.BtnAR.Name = "BtnAR";
             this.BtnAR.Size = new System.Drawing.Size(233, 23);
             this.BtnAR.TabIndex = 1;
@@ -55,7 +56,7 @@
             // 
             // BtnSalir
             // 
-            this.BtnSalir.Location = new System.Drawing.Point(182, 98);
+            this.BtnSalir.Location = new System.Drawing.Point(182, 124);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(75, 23);
             this.BtnSalir.TabIndex = 2;
@@ -63,11 +64,22 @@
             this.BtnSalir.UseVisualStyleBackColor = true;
             this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
+            // BtnResidente
+            // 
+            this.BtnResidente.Location = new System.Drawing.Point(23, 37);
+            this.BtnResidente.Name = "BtnResidente";
+            this.BtnResidente.Size = new System.Drawing.Size(233, 23);
+            this.BtnResidente.TabIndex = 3;
+            this.BtnResidente.Text = "Solicitud de residente";
+            this.BtnResidente.UseVisualStyleBackColor = true;
+            this.BtnResidente.Click += new System.EventHandler(this.BtnResidente_Click);
+            // 
             // FrmCordinador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(268, 128);
+            this.ClientSize = new System.Drawing.Size(268, 159);
+            this.Controls.Add(this.BtnResidente);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnAR);
             this.Controls.Add(this.BtnAT);
@@ -84,5 +96,6 @@
         private System.Windows.Forms.Button BtnAT;
         private System.Windows.Forms.Button BtnAR;
         private System.Windows.Forms.Button BtnSalir;
+        private System.Windows.Forms.Button BtnResidente;
     }
 }

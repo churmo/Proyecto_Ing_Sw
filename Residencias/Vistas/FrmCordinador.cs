@@ -50,5 +50,11 @@ namespace Residencias.Vistas
                 e.Cancel = true;
             }
         }
+
+        private void BtnResidente_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            new FrmSolicitudR(this).Show();
+        }
     }
 }

@@ -24,6 +24,8 @@ namespace Residencias
             x = c;
             idA = id;
             ConA = Con;
+            TxtOtro.Visible = false;
+            LblOtro.Visible = false;
             Carga();
         }
         public FrmSRP()
@@ -38,6 +40,52 @@ namespace Residencias
             txtNoControlR.Text = Alu.idAlumno;
             txtNombreResidente.Text = Alu.NombreCompleto;
             txtCarreraR.Text = Alu.Carrera;
+        }
+        public Empresa empresa()
+        {
+            if (otro)
+            {
+                return new Empresa(
+                               txtNombreE.Text,
+                               cbxGiroRamaSector.Text,
+                               TxtOtro.Text,
+                               txtRFCE.Text,
+                               txtCPE.Text,
+                               txtDomicilioE.Text,
+                               txtFaxE.Text,
+                               txtColoniaE.Text,
+                               txtTelefonoE.Text,
+                               txtMisionEmpresa.Text,
+                               txtTitularEmpresa.Text,
+                               txtPuestoTE.Text,
+                               txtAsesorExterno.Text,
+                               txtPuestoAE.Text,
+                               txtPersonaFirma.Text,
+                               txtPersonaFirma.Text
+                               );
+            }
+            else
+            {
+                return new Empresa(
+               txtNombreE.Text,
+               cbxGiroRamaSector.Text,
+               "",
+               txtRFCE.Text,
+               txtCPE.Text,
+               txtDomicilioE.Text,
+               txtFaxE.Text,
+               txtColoniaE.Text,
+               txtTelefonoE.Text,
+               txtMisionEmpresa.Text,
+               txtTitularEmpresa.Text,
+               txtPuestoTE.Text,
+               txtAsesorExterno.Text,
+               txtPuestoAE.Text,
+               txtPersonaFirma.Text,
+               txtPersonaFirma.Text
+               );
+            }
+           
         }
 
         private void tabDatosEmpresa_Click(object sender, EventArgs e)
@@ -89,6 +137,7 @@ namespace Residencias
            
             if(Comprobar())
             {
+                empresa();
                 MessageBox.Show("Datos guardados satisfactoriamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Dispose();
                 x.Visible = true;
@@ -99,8 +148,21 @@ namespace Residencias
         {
             this.Close();
         }
-
-        
+        bool otro=false;
+        private void cbxGiroRamaSector_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbxGiroRamaSector.Text.ToLower().Equals("otro"))
+            {
+                TxtOtro.Visible = true;
+                LblOtro.Visible = true;
+                otro = true;
+            }else
+            {
+                TxtOtro.Visible = false;
+                LblOtro.Visible = false;
+                otro = false;
+            }
+        }
 
         private void FrmSRP_FormClosing(object sender, FormClosingEventArgs e)
         {

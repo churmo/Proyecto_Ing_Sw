@@ -33,5 +33,10 @@ namespace Residencias.FrontEnd
             this.apellido2 = apellido2;
             this.Carrera = Carrera;
         }
+        public Alumno(String idAlumno)
+        {
+            this.idAlumno = idAlumno;
+            
+        }
     }
 }

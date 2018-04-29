@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Residencias.Vistas;
+using Residencias.FrontEnd;
 using Residencias.BackEnd;
 
 namespace Residencias.Vistas
@@ -77,9 +77,27 @@ namespace Residencias.Vistas
                 }
                 else if (CbxTipo.Text.Equals("Coordinador"))
                 {
-                    limpiar();
-                    this.Visible = false;
-                    new FrmCordinador(this).Show();
+                    CoordinadorDAO objCD = new CoordinadorDAO();
+                    Coordinador ObjCo = new Coordinador();
+                    ObjCo = objCD.Buscar(TxtUsuario.Text);
+                    if (ObjCo==null)
+                    {
+                        MessageBox.Show("El usuario no existe", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        if (TxtContrasenia.Text.Equals(ObjCo.contrasenia))
+                        {
+                            limpiar();
+                            this.Visible = false;
+                            new FrmCordinador(this).Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("El usuario o contraseñia incorrectos", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                   
                 }
             }
             
