@@ -33,12 +33,14 @@
             this.cbxOpcionesDP = new System.Windows.Forms.ComboBox();
             this.txtNumResidencias = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textPeriodoProyecto = new System.Windows.Forms.TextBox();
+            this.txtPeriodoProyecto = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombreProyecto = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabDatosEmpresa = new System.Windows.Forms.TabPage();
+            this.LblOtro = new System.Windows.Forms.Label();
+            this.TxtOtro = new System.Windows.Forms.TextBox();
             this.cbxGiroRamaSector = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
             this.txtPersonaFirma = new System.Windows.Forms.TextBox();
@@ -77,7 +79,7 @@
             this.btnEntregar = new System.Windows.Forms.Button();
             this.txtTelefonoR = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.txtCiudadE = new System.Windows.Forms.TextBox();
+            this.txtCiudadR = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
             this.txtNoSS = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
@@ -92,8 +94,6 @@
             this.label22 = new System.Windows.Forms.Label();
             this.txtNombreResidente = new System.Windows.Forms.TextBox();
             this.Nombre = new System.Windows.Forms.Label();
-            this.TxtOtro = new System.Windows.Forms.TextBox();
-            this.LblOtro = new System.Windows.Forms.Label();
             this.Menu.SuspendLayout();
             this.tabProyecto.SuspendLayout();
             this.tabDatosEmpresa.SuspendLayout();
@@ -116,7 +116,7 @@
             this.tabProyecto.Controls.Add(this.cbxOpcionesDP);
             this.tabProyecto.Controls.Add(this.txtNumResidencias);
             this.tabProyecto.Controls.Add(this.label4);
-            this.tabProyecto.Controls.Add(this.textPeriodoProyecto);
+            this.tabProyecto.Controls.Add(this.txtPeriodoProyecto);
             this.tabProyecto.Controls.Add(this.label3);
             this.tabProyecto.Controls.Add(this.label2);
             this.tabProyecto.Controls.Add(this.txtNombreProyecto);
@@ -158,12 +158,12 @@
             this.label4.TabIndex = 18;
             this.label4.Text = "Numero de Residencias";
             // 
-            // textPeriodoProyecto
+            // txtPeriodoProyecto
             // 
-            this.textPeriodoProyecto.Location = new System.Drawing.Point(340, 378);
-            this.textPeriodoProyecto.Name = "textPeriodoProyecto";
-            this.textPeriodoProyecto.Size = new System.Drawing.Size(164, 20);
-            this.textPeriodoProyecto.TabIndex = 17;
+            this.txtPeriodoProyecto.Location = new System.Drawing.Point(340, 378);
+            this.txtPeriodoProyecto.Name = "txtPeriodoProyecto";
+            this.txtPeriodoProyecto.Size = new System.Drawing.Size(164, 20);
+            this.txtPeriodoProyecto.TabIndex = 17;
             // 
             // label3
             // 
@@ -242,6 +242,22 @@
             this.tabDatosEmpresa.Text = "Datos de la Empresa";
             this.tabDatosEmpresa.UseVisualStyleBackColor = true;
             this.tabDatosEmpresa.Click += new System.EventHandler(this.tabDatosEmpresa_Click);
+            // 
+            // LblOtro
+            // 
+            this.LblOtro.AutoSize = true;
+            this.LblOtro.Location = new System.Drawing.Point(288, 60);
+            this.LblOtro.Name = "LblOtro";
+            this.LblOtro.Size = new System.Drawing.Size(164, 13);
+            this.LblOtro.TabIndex = 74;
+            this.LblOtro.Text = "Especifique que tipo de sector es";
+            // 
+            // TxtOtro
+            // 
+            this.TxtOtro.Location = new System.Drawing.Point(288, 88);
+            this.TxtOtro.Name = "TxtOtro";
+            this.TxtOtro.Size = new System.Drawing.Size(344, 20);
+            this.TxtOtro.TabIndex = 73;
             // 
             // cbxGiroRamaSector
             // 
@@ -512,7 +528,7 @@
             this.tabResidente.Controls.Add(this.btnEntregar);
             this.tabResidente.Controls.Add(this.txtTelefonoR);
             this.tabResidente.Controls.Add(this.label29);
-            this.tabResidente.Controls.Add(this.txtCiudadE);
+            this.tabResidente.Controls.Add(this.txtCiudadR);
             this.tabResidente.Controls.Add(this.label28);
             this.tabResidente.Controls.Add(this.txtNoSS);
             this.tabResidente.Controls.Add(this.label27);
@@ -592,12 +608,12 @@
             this.label29.TabIndex = 18;
             this.label29.Text = "Teléfono";
             // 
-            // txtCiudadE
+            // txtCiudadR
             // 
-            this.txtCiudadE.Location = new System.Drawing.Point(176, 409);
-            this.txtCiudadE.Name = "txtCiudadE";
-            this.txtCiudadE.Size = new System.Drawing.Size(209, 20);
-            this.txtCiudadE.TabIndex = 17;
+            this.txtCiudadR.Location = new System.Drawing.Point(176, 409);
+            this.txtCiudadR.Name = "txtCiudadR";
+            this.txtCiudadR.Size = new System.Drawing.Size(209, 20);
+            this.txtCiudadR.TabIndex = 17;
             // 
             // label28
             // 
@@ -713,22 +729,6 @@
             this.Nombre.TabIndex = 0;
             this.Nombre.Text = "Nombre";
             // 
-            // TxtOtro
-            // 
-            this.TxtOtro.Location = new System.Drawing.Point(288, 88);
-            this.TxtOtro.Name = "TxtOtro";
-            this.TxtOtro.Size = new System.Drawing.Size(344, 20);
-            this.TxtOtro.TabIndex = 73;
-            // 
-            // LblOtro
-            // 
-            this.LblOtro.AutoSize = true;
-            this.LblOtro.Location = new System.Drawing.Point(288, 60);
-            this.LblOtro.Name = "LblOtro";
-            this.LblOtro.Size = new System.Drawing.Size(164, 13);
-            this.LblOtro.TabIndex = 74;
-            this.LblOtro.Text = "Especifique que tipo de sector es";
-            // 
             // FrmSRP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -756,7 +756,7 @@
         private System.Windows.Forms.TabPage tabProyecto;
         private System.Windows.Forms.TextBox txtNumResidencias;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textPeriodoProyecto;
+        private System.Windows.Forms.TextBox txtPeriodoProyecto;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNombreProyecto;
@@ -797,7 +797,7 @@
         private System.Windows.Forms.Button btnEntregar;
         private System.Windows.Forms.TextBox txtTelefonoR;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox txtCiudadE;
+        private System.Windows.Forms.TextBox txtCiudadR;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.TextBox txtNoSS;
         private System.Windows.Forms.Label label27;

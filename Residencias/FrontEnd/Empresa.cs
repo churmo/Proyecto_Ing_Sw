@@ -24,15 +24,17 @@ namespace Residencias.FrontEnd
         public String PuestoAsesorExterno { get; set; }
         public String NombrePersonaFirma { get; set; }
         public String PuestoPersonaFirma { get; set; }
+        public Empresa()
+        {
 
-        public Empresa(String idEmpresa, String giraRamaSector,String otrogrs,String rfc,String cp,String domicilio,String fax,String colonia,String telefono, String MisionEmpresa,String NombreTitularEmpresa,String PuestoTitularEmpresa,String NombreAsesorExterno,String PuestoAsesorExterno,String NombrePersonaFirma,String PuestoPersonaFirma)
+        }
+        public Empresa(String idEmpresa, String giraRamaSector, String otrogrs, String rfc, String cp, String domicilio, String fax, String colonia, String telefono, String MisionEmpresa, String NombreTitularEmpresa, String PuestoTitularEmpresa, String NombreAsesorExterno, String PuestoAsesorExterno, String NombrePersonaFirma, String PuestoPersonaFirma)
         {
             this.idEmpresa = idEmpresa;
             this.giraRamaSector = giraRamaSector;
             this.otrogrs = otrogrs;
             this.rfc = rfc;
-            this.cp = cp;
-            this.domicilio = domicilio;
+            this.cp = cp; this.domicilio = domicilio;
             this.fax = fax;
             this.colonia = colonia;
             this.telefono = telefono;

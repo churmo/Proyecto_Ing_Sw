@@ -50,6 +50,12 @@
     <Compile Include="BackEnd\AlumnoDAO.cs" />
     <Compile Include="BackEnd\CoordinadorDAO.cs" />
     <Compile Include="BackEnd\EmpresaDAO.cs" />
+    <Compile Include="BackEnd\ProyectoDAO.cs" />
+    <Compile Include="BackEnd\ResidenteDAO.cs" />
+    <Compile Include="BackEnd\RevisarDocDAO.cs" />
+    <Compile Include="BackEnd\RevisorDAO.cs" />
+    <Compile Include="BackEnd\TutorDAO.cs" />
+    <Compile Include="BackEnd\UsuarioDAO.cs" />
     <Compile Include="FrontEnd\Alumno.cs" />
     <Compile Include="FrontEnd\Coordinador.cs" />
     <Compile Include="FrontEnd\Empresa.cs" />
@@ -58,6 +64,7 @@
     <Compile Include="FrontEnd\RevisarDoc.cs" />
     <Compile Include="FrontEnd\Revisor.cs" />
     <Compile Include="FrontEnd\Tutor.cs" />
+    <Compile Include="FrontEnd\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vistas\FrmAsigAsesor.cs">

@@ -32,6 +32,7 @@
             this.BtnAR = new System.Windows.Forms.Button();
             this.BtnSalir = new System.Windows.Forms.Button();
             this.BtnResidente = new System.Windows.Forms.Button();
+            this.LblCoordi = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BtnAT
@@ -74,11 +75,21 @@
             this.BtnResidente.UseVisualStyleBackColor = true;
             this.BtnResidente.Click += new System.EventHandler(this.BtnResidente_Click);
             // 
+            // LblCoordi
+            // 
+            this.LblCoordi.AutoSize = true;
+            this.LblCoordi.Location = new System.Drawing.Point(23, 18);
+            this.LblCoordi.Name = "LblCoordi";
+            this.LblCoordi.Size = new System.Drawing.Size(120, 13);
+            this.LblCoordi.TabIndex = 4;
+            this.LblCoordi.Text = "Nombre del coordinador";
+            // 
             // FrmCordinador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(268, 159);
+            this.Controls.Add(this.LblCoordi);
             this.Controls.Add(this.BtnResidente);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnAR);
@@ -88,6 +99,7 @@
             this.Text = "Cordinador";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmCordinador_FormClosing);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -97,5 +109,6 @@
         private System.Windows.Forms.Button BtnAR;
         private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.Button BtnResidente;
+        private System.Windows.Forms.Label LblCoordi;
     }
 }

@@ -8,27 +8,23 @@ namespace Residencias.FrontEnd
 {
     public class Revisor
     {
-        int idClaveTutor { get; set; }
-        String Nombre { get; set; }
-        String ApellidoP { get; set; }
-        String ApellidoM { get; set; }
+        public String idRevisor { get; set; }
+        public String nombre { get; set; }
+        public String apellido1 { get; set; }
+        public String apellido2 { get; set; }
+        public String contrasenia { get; set; }
 
-        public String NombreCompleto
+        public Revisor(String idRevisor,String nombre,String apellido1,String apellido2,String contrasenia)
         {
-            get
-            {
-                return String.Format("{0} {1} {2}", Nombre, ApellidoP, ApellidoM);
-            }
+            this.idRevisor = idRevisor;
+            this.nombre = nombre;
+            this.apellido1 = apellido1;
+            this.apellido2 = apellido2;
+            this.contrasenia = contrasenia;
         }
-        Revisor()
-        { }
 
-        Revisor(int idClaveTutor, String Nombre, String ApellidoP, String ApellidoM)
+        public Revisor()
         {
-            this.idClaveTutor = idClaveTutor;
-            this.Nombre = Nombre;
-            this.ApellidoP = ApellidoP;
-            this.ApellidoM = ApellidoM;
 
         }
     }

@@ -69,7 +69,34 @@ namespace Residencias.BackEnd
             
 
         }
+        public Coordinador Nombre(String idCoordi)
+        {
+            Coordinador objC = null;
+            try
+            {
 
+                DataTable objTable = new DataTable();
+
+                //Da como resultado una tabla apartir de la consulta
+                objTable = con.ejecutarConsulta("SELECT Nombre,apellidoP,ApellidoM FROM coordi where idCoordi='" + idCoordi + "';");
+
+                //Asigna las columnas de la tabla a los valores correspondientes del alumno
+                foreach (DataRow t in objTable.Rows)
+                {
+                    objC = new Coordinador(
+                        t["Nombre"].ToString(),
+                        t["apellidoP"].ToString(),
+                        t["ApellidoM"].ToString());
+                }
+                return objC;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+
+
+        }
 
     }
 }

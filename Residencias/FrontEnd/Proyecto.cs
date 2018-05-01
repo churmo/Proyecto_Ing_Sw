@@ -8,11 +8,24 @@ namespace Residencias.FrontEnd
 {
     public class Proyecto
     {
-        int idProyecto { get; set; }
-        String Nombre { get; set; }
-        String PerdiodoProyecto { get; set; }
-        int NumeroResidencias { get; set; }
-        String opcionElegida { get; set; }
-        int idEmpresa { get; set; }
+        public String idProyecto { get; set; }
+        public String Nombre { get; set; }
+        public String PeriodoProyecto { get; set; }
+        public int NumeroResidencias { get; set; }
+        public String opcionElegida { get; set; }
+        public String idEmpresa { get; set; }
+        public Proyecto()
+        {
+
+        }
+        public Proyecto(String idProyecto,String Nombre,String PeriodoProyecto,int NumeroResidencias,String opcionElegida,String idEmpresa)
+        {
+            this.idProyecto = idProyecto;
+            this.Nombre = Nombre;
+            this.PeriodoProyecto = PeriodoProyecto;
+            this.NumeroResidencias = NumeroResidencias;
+            this.opcionElegida = opcionElegida;
+            this.idEmpresa = idEmpresa;
+        }
     }
 }

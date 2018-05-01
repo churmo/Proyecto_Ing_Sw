@@ -23,7 +23,7 @@ namespace Residencias.FrontEnd
                 return String.Format("{0} {1} {2}", Nombre, apellidoP, apellidoM);
             }
         }
-        public Coordinador(String idCoordi,String Nombre,String apellidoP,String apellidoM,String Carrera,String correo,String Telefono,String contrasenia)
+        public Coordinador(String idCoordi,String Nombre,String apellidoP,String apellidoM,String Carrera,String correo,String Telefono)
         {
             this.idCoordi = idCoordi;
             this.Nombre = Nombre;
@@ -32,14 +32,21 @@ namespace Residencias.FrontEnd
             this.Carrera = Carrera;
             this.correo = correo;
             this.Telefono = Telefono;
-            this.contrasenia = contrasenia;
+        }
+        public Coordinador( String Nombre, String apellidoP, String apellidoM)
+        {
+            
+            this.Nombre = Nombre;
+            this.apellidoP = apellidoP;
+            this.apellidoM = apellidoM;
+            
         }
         public Coordinador(String idCoordi, String contrasenia)
         {
             this.idCoordi = idCoordi;
             this.contrasenia = contrasenia;
+            
         }
-
         public Coordinador()
         {
 

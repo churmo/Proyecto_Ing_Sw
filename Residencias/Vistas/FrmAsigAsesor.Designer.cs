@@ -58,7 +58,7 @@
             this.CbxAsesores.FormattingEnabled = true;
             this.CbxAsesores.Location = new System.Drawing.Point(13, 70);
             this.CbxAsesores.Name = "CbxAsesores";
-            this.CbxAsesores.Size = new System.Drawing.Size(121, 21);
+            this.CbxAsesores.Size = new System.Drawing.Size(181, 21);
             this.CbxAsesores.TabIndex = 3;
             // 
             // BtnAceptar
@@ -74,16 +74,16 @@
             // CbxAlumno
             // 
             this.CbxAlumno.FormattingEnabled = true;
-            this.CbxAlumno.Location = new System.Drawing.Point(16, 30);
+            this.CbxAlumno.Location = new System.Drawing.Point(13, 30);
             this.CbxAlumno.Name = "CbxAlumno";
-            this.CbxAlumno.Size = new System.Drawing.Size(121, 21);
+            this.CbxAlumno.Size = new System.Drawing.Size(181, 21);
             this.CbxAlumno.TabIndex = 5;
             // 
             // FrmAsigAsesor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(206, 209);
+            this.ClientSize = new System.Drawing.Size(212, 133);
             this.Controls.Add(this.CbxAlumno);
             this.Controls.Add(this.BtnAceptar);
             this.Controls.Add(this.CbxAsesores);

@@ -19,9 +19,27 @@ namespace Residencias
         {
             InitializeComponent();
             x = c;
-            
+            cargar();
         }
-
+        public void cargar()
+        {
+            TutorDAO TD = new TutorDAO();
+            Tutor T = new Tutor();
+            ResidenteDAO RD = new ResidenteDAO();
+            Residente R = new Residente();
+            List<Tutor> LT = new List<Tutor>();
+            List<Residente> LR = new List<Residente>();
+            LT = TD.traerTodos();
+            LR = RD.lista();
+            for (int i = 0; i < LT.Count; i++)
+            {
+                CbxAsesores.Items.Add(LT[i].NombreCompleto);
+            }
+            for (int i = 0; i < LR.Count; i++)
+            {
+                CbxAlumno.Items.Add(LR[i].NombreCompleto);
+            }
+        }
         private void BtnAceptar_Click(object sender, EventArgs e)
         {
             this.Dispose();

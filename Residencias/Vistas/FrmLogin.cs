@@ -88,9 +88,10 @@ namespace Residencias.Vistas
                     {
                         if (TxtContrasenia.Text.Equals(ObjCo.contrasenia))
                         {
+                            String id = TxtUsuario.Text;
                             limpiar();
                             this.Visible = false;
-                            new FrmCordinador(this).Show();
+                            new FrmCordinador(this,id).Show();
                         }
                         else
                         {

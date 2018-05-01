@@ -40,5 +40,5 @@ G:\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.Vistas.FrmLogin.resources
 G:\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.FrmSRP.resources
 G:\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.csproj.GenerateResource.Cache
 G:\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.Vistas.FrmResidente.resources
-G:\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.csprojResolveAssemblyReference.cache
 G:\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.Vistas.FrmSolicitudR.resources
+G:\Proyecto_Ing_Sw\Residencias\obj\Debug\Residencias.csprojResolveAssemblyReference.cache
