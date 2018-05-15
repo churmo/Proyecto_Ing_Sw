@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9ECFE8F8-9DAA-4127-9048-BCE58EC1B801}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Residencias</RootNamespace>
+    <AssemblyName>Residencias</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExcelLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ExcelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackEnd\Conexion.cs" />
+    <Compile Include="BackEnd\AlumnoDAO.cs" />
+    <Compile Include="BackEnd\CoordinadorDAO.cs" />
+    <Compile Include="BackEnd\EmpresaDAO.cs" />
+    <Compile Include="BackEnd\ProyectoDAO.cs" />
+    <Compile Include="BackEnd\ResidenteDAO.cs" />
+    <Compile Include="BackEnd\RevisarDocDAO.cs" />
+    <Compile Include="BackEnd\RevisorDAO.cs" />
+    <Compile Include="BackEnd\TutorDAO.cs" />
+    <Compile Include="BackEnd\UsuarioDAO.cs" />
+    <Compile Include="FrontEnd\Alumno.cs" />
+    <Compile Include="FrontEnd\Coordinador.cs" />
+    <Compile Include="FrontEnd\Empresa.cs" />
+    <Compile Include="FrontEnd\Proyecto.cs" />
+    <Compile Include="FrontEnd\Residente.cs" />
+    <Compile Include="FrontEnd\RevisarDoc.cs" />
+    <Compile Include="FrontEnd\Revisor.cs" />
+    <Compile Include="FrontEnd\Tutor.cs" />
+    <Compile Include="FrontEnd\Usuario.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vistas\FrmAsesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmAsesor.Designer.cs">
+      <DependentUpon>FrmAsesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmAsigAsesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmAsigAsesor.Designer.cs">
+      <DependentUpon>FrmAsigAsesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmAsignarCalificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmAsignarCalificacion.Designer.cs">
+      <DependentUpon>FrmAsignarCalificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmAsignarRevisores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmAsignarRevisores.Designer.cs">
+      <DependentUpon>FrmAsignarRevisores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmMensajeDeAprovacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmMensajeDeAprovacion.Designer.cs">
+      <DependentUpon>FrmMensajeDeAprovacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmCordinador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmCordinador.Designer.cs">
+      <DependentUpon>FrmCordinador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmCrear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmCrear.Designer.cs">
+      <DependentUpon>FrmCrear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmDictamenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmDictamenes.Designer.cs">
+      <DependentUpon>FrmDictamenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmEntregaDeDocuments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmEntregaDeDocuments.Designer.cs">
+      <DependentUpon>FrmEntregaDeDocuments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmExportacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmExportacion.Designer.cs">
+      <DependentUpon>FrmExportacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmFinalizacionDelTrabajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmFinalizacionDelTrabajo.Designer.cs">
+      <DependentUpon>FrmFinalizacionDelTrabajo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmResidente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmResidente.Designer.cs">
+      <DependentUpon>FrmResidente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmRevisor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmRevisor.Designer.cs">
+      <DependentUpon>FrmRevisor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmSolicitudR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmSolicitudR.Designer.cs">
+      <DependentUpon>FrmSolicitudR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmSRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmSRP.designer.cs">
+      <DependentUpon>FrmSRP.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vistas\FrmAsesor.resx">
+      <DependentUpon>FrmAsesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmAsigAsesor.resx">
+      <DependentUpon>FrmAsigAsesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmAsignarCalificacion.resx">
+      <DependentUpon>FrmAsignarCalificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmAsignarRevisores.resx">
+      <DependentUpon>FrmAsignarRevisores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmMensajeDeAprovacion.resx">
+      <DependentUpon>FrmMensajeDeAprovacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmCordinador.resx">
+      <DependentUpon>FrmCordinador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmCrear.resx">
+      <DependentUpon>FrmCrear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmDictamenes.resx">
+      <DependentUpon>FrmDictamenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmEntregaDeDocuments.resx">
+      <DependentUpon>FrmEntregaDeDocuments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmExportacion.resx">
+      <DependentUpon>FrmExportacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmFinalizacionDelTrabajo.resx">
+      <DependentUpon>FrmFinalizacionDelTrabajo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmResidente.resx">
+      <DependentUpon>FrmResidente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmSolicitudR.resx">
+      <DependentUpon>FrmSolicitudR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmSRP.resx">
+      <DependentUpon>FrmSRP.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
